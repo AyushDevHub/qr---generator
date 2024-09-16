@@ -40,4 +40,3 @@ function showTask() {
 
 showTask();
 
-console.log(window);
