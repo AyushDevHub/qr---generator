@@ -1,85 +1,145 @@
-*{
+* {
     margin: 0;
+    /* Remove default margin for all elements */
     padding: 0;
+    /* Remove default padding for all elements */
     box-sizing: border-box;
+    /* Make sure padding and border are included in element's total width/height */
     font-family: 'Poppins', sans-serif;
+    /* Set font to 'Poppins' for all text */
 }
-body{
+
+body {
     background-color: #262a2f;
+    /* Set the background color of the body to a dark gray */
 }
 
-.container{
+.container {
     width: 400px;
+    /* Set the container width to 400px */
     padding: 25px 35px;
+    /* Add padding: 25px on top/bottom and 35px on left/right */
     position: absolute;
+    /* Position the container absolutely relative to its parent */
     top: 50%;
+    /* Move container 50% from the top of the page */
     left: 50%;
+    /* Move container 50% from the left of the page */
     transform: translate(-50%, -50%);
+    /* Center the container perfectly on the page */
     background: #fff;
+    /* Set the background color of the container to white */
     border-radius: 10px;
+    /* Round the corners of the container */
 }
 
-.container p{
+.container p {
     font-weight: 600;
+    /* Make the paragraph text bold */
     font-size: 15px;
+    /* Set the font size of the paragraph */
     margin-bottom: 8px;
-
+    /* Add margin below the paragraph */
 }
 
-.container input{
+.container input {
     width: 100%;
+    /* Set the input width to 100% of the container */
     height: 50px;
+    /* Set the height of the input field */
     border: 1px solid #494eea;
+    /* Add a border with solid color #494eea */
     outline: 0;
+    /* Remove the default input outline */
     padding: 10px;
+    /* Add padding inside the input */
     margin: 10px 0px 20px;
+    /* Add margin around the input */
     border-radius: 5px;
+    /* Round the input corners */
 }
 
-.container button{
+.container button {
     width: 100%;
+    /* Set the button width to 100% of the container */
     height: 50px;
+    /* Set the button height */
     background: #494eea;
+    /* Set the button background color */
     color: #fff;
+    /* Set the button text color to white */
     border: 0;
+    /* Remove the border from the button */
     outline: 0;
+    /* Remove the outline from the button */
     border-radius: 5px;
-    box-shadow: 0px 10px 10px rgba(0,0,0, 0.1);
+    /* Round the button corners */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    /* Add a shadow effect to the button */
     cursor: pointer;
+    /* Change the cursor to a pointer on hover */
     font-weight: 500;
+    /* Set medium font weight for the button text */
 }
 
-.imgBox{
+.imgBox {
     width: 200px;
+    /* Set the width of the image container */
     border-radius: 5px;
+    /* Round the corners of the image container */
     max-height: 0;
+    /* Initially hide the image (max height is 0) */
     overflow: hidden;
+    /* Hide any content that overflows */
     transition: max-height 1s;
+    /* Smoothly transition when the height changes */
 }
 
-.imgBox img{
+.imgBox img {
     width: 100%;
+    /* Make the image take up 100% of its container width */
     padding: 10px;
+    /* Add padding around the image */
 }
 
-.imgBox.show-img{
+.imgBox.show-img {
     max-height: 300px;
+    /* Set max height when image is shown */
     margin: 10px auto;
+    /* Center the image container with margin */
     border: 1px solid #d1d1d1;
+    /* Add a border around the image */
 }
 
-.error{
+.error {
     animation: shake 0.1s linear 10;
+    /* Apply shake animation for 1 second if there's an error */
 }
-@keyframes shake{
-    0% { transform: translateX(0); 
-}
-    25% { transform: translateX(-2px); 
-}
-    50% { transform: translateX(0); 
-}
-    75% { transform: translateX(2px); 
-}
-    100% { transform: translateX(0); 
-}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    /* Start at the original position */
+    25% {
+        transform: translateX(-2px);
+    }
+
+    /* Move 2px to the left */
+    50% {
+        transform: translateX(0);
+    }
+
+    /* Move back to the original position */
+    75% {
+        transform: translateX(2px);
+    }
+
+    /* Move 2px to the right */
+    100% {
+        transform: translateX(0);
+    }
+
+    /* Return to the original position */
 }

@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Specifies the document type as HTML5 -->
     <meta charset="UTF-8">
+    <!-- Defines the character set used (UTF-8 handles most characters) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the webpage is responsive on all devices -->
     <title>Qr generator</title>
+    <!-- The title of the page shown in the browser tab -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link to the external CSS file (style.css) to style the page -->
 </head>
 <body>
+    <!-- Main body of the HTML document starts here -->
     <div class="container">
-        <p>Enter you text or your URL</p>
-        <input  type="text" id="text" placeholder="Enter your text" >
+        <!-- A container div to group the elements for layout -->
+        <p>Enter your text or your URL</p>
+        <!-- A paragraph prompting the user to input their text or URL -->
+        <input type="text" id="text" placeholder="Enter your text">
+        <!-- Input field where the user can type text or a URL -->
         <div class="imgBox">
+            <!-- A div to hold the QR code image -->
             <img src="" id="qrImage">
+            <!-- The image element where the QR code will be displayed (src is set dynamically) -->
         </div>
         <button class="button">Generate your QR code</button>
+        <!-- Button that triggers the QR code generation -->
     </div>
     <script src="script.js"></script>
+    <!-- Links to the JavaScript file (script.js) that contains the logic to generate the QR code -->
 </body>
 </html>
