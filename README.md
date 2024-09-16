@@ -11,7 +11,7 @@ A simple and efficient **QR Code Generator** web application built using **HTML*
 
 ## Demo
 
-[Live Demo](#)   https://ayushdevhub.github.io/qr---generator/<!-- Add your demo link here -->
+ https://ayushdevhub.github.io/qr---generator/<!-- Add your demo link here -->
 
 ## Getting Started
 
